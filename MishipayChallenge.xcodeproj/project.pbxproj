@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180865FA219B199B00EEAA18 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180865F9219B199B00EEAA18 /* Configuration.swift */; };
+		180865FC219B3EF100EEAA18 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180865FB219B3EF100EEAA18 /* CartViewController.swift */; };
+		180865FF219B4D7000EEAA18 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180865FD219B4D7000EEAA18 /* CartTableViewCell.swift */; };
+		18086600219B4D7000EEAA18 /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180865FE219B4D7000EEAA18 /* CartTableViewCell.xib */; };
+		180A84FF219B74DD00DA7103 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A84FE219B74DD00DA7103 /* Product.swift */; };
+		18163D64219BE1F0006EE8F8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18163D63219BE1F0006EE8F8 /* ProfileViewController.swift */; };
+		18163D66219BE292006EE8F8 /* ProfileDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18163D65219BE292006EE8F8 /* ProfileDataSource.swift */; };
+		18163D6A219BE2DD006EE8F8 /* ProfileMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18163D68219BE2DD006EE8F8 /* ProfileMenuTableViewCell.swift */; };
+		18163D6B219BE2DD006EE8F8 /* ProfileMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18163D69219BE2DD006EE8F8 /* ProfileMenuTableViewCell.xib */; };
+		1847F605219B4E82003E4065 /* CartDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F604219B4E82003E4065 /* CartDataSource.swift */; };
+		1847F607219B6E86003E4065 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F606219B6E86003E4065 /* ProductViewController.swift */; };
+		1847F609219B786D003E4065 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F608219B786D003E4065 /* Store.swift */; };
+		1847F60C219B83EF003E4065 /* MyImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F60B219B83EF003E4065 /* MyImageCache.swift */; };
+		1847F60E219B89BA003E4065 /* RootProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F60D219B89BA003E4065 /* RootProduct.swift */; };
+		1847F610219BA5D8003E4065 /* CartItemTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F60F219BA5D8003E4065 /* CartItemTableViewCellDelegate.swift */; };
+		1847F613219BB4E2003E4065 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F612219BB4E2003E4065 /* SignInViewController.swift */; };
+		1847F615219BC5CC003E4065 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847F614219BC5CC003E4065 /* SignUpViewController.swift */; };
+		18770009219AF1B10058773B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18770008219AF1B10058773B /* AppDelegate.swift */; };
+		1877000B219AF1B10058773B /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877000A219AF1B10058773B /* ScanViewController.swift */; };
+		1877000E219AF1B10058773B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1877000C219AF1B10058773B /* Main.storyboard */; };
+		18770010219AF1B30058773B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1877000F219AF1B30058773B /* Assets.xcassets */; };
+		18770013219AF1B30058773B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18770011219AF1B30058773B /* LaunchScreen.storyboard */; };
+		1877001E219AF1B30058773B /* MishipayChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877001D219AF1B30058773B /* MishipayChallengeTests.swift */; };
+		18770029219AF1B30058773B /* MishipayChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18770028219AF1B30058773B /* MishipayChallengeUITests.swift */; };
+		18770041219B00700058773B /* ScanditSDK in Resources */ = {isa = PBXBuildFile; fileRef = 18770040219B00700058773B /* ScanditSDK */; };
+		18770046219B026A0058773B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18770045219B026A0058773B /* Accelerate.framework */; };
+		18770048219B02770058773B /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18770047219B02770058773B /* libiconv.tbd */; };
+		1877004A219B02800058773B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18770049219B02800058773B /* libc++.tbd */; };
+		1877004C219B028B0058773B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1877004B219B028B0058773B /* libz.tbd */; };
+		18770050219B02B00058773B /* ScanditBarcodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1877004F219B02B00058773B /* ScanditBarcodeScanner.framework */; };
+		18770058219B0BA60058773B /* ScanditBarcodeScanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18770057219B0BA60058773B /* ScanditBarcodeScanner.bundle */; };
+		18CD2932219BD2AD00A04625 /* HomeTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CD2931219BD2AD00A04625 /* HomeTabbarController.swift */; };
+		34EF98F3C86B4584963DCD36 /* Pods_MishipayChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2060229A0038DCF9131A3A /* Pods_MishipayChallengeUITests.framework */; };
+		464CB981512DDB735FA5B68C /* Pods_MishipayChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8408C828B30B68A3AF07ADAC /* Pods_MishipayChallengeTests.framework */; };
+		AADD93494D6C92C3657E7B87 /* Pods_MishipayChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91640FFF0E2EB32F0ED9F49 /* Pods_MishipayChallenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1877001A219AF1B30058773B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1877FFFD219AF1B10058773B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18770004219AF1B10058773B;
+			remoteInfo = MishipayChallenge;
+		};
+		18770025219AF1B30058773B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1877FFFD219AF1B10058773B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18770004219AF1B10058773B;
+			remoteInfo = MishipayChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180865F9219B199B00EEAA18 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		180865FB219B3EF100EEAA18 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		180865FD219B4D7000EEAA18 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		180865FE219B4D7000EEAA18 /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
+		180A84FE219B74DD00DA7103 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		18163D63219BE1F0006EE8F8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		18163D65219BE292006EE8F8 /* ProfileDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataSource.swift; sourceTree = "<group>"; };
+		18163D68219BE2DD006EE8F8 /* ProfileMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuTableViewCell.swift; sourceTree = "<group>"; };
+		18163D69219BE2DD006EE8F8 /* ProfileMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileMenuTableViewCell.xib; sourceTree = "<group>"; };
+		1847F604219B4E82003E4065 /* CartDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartDataSource.swift; sourceTree = "<group>"; };
+		1847F606219B6E86003E4065 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		1847F608219B786D003E4065 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		1847F60B219B83EF003E4065 /* MyImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageCache.swift; sourceTree = "<group>"; };
+		1847F60D219B89BA003E4065 /* RootProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootProduct.swift; sourceTree = "<group>"; };
+		1847F60F219BA5D8003E4065 /* CartItemTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		1847F612219BB4E2003E4065 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		1847F614219BC5CC003E4065 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		18770005219AF1B10058773B /* MishipayChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MishipayChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18770008219AF1B10058773B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1877000A219AF1B10058773B /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		1877000D219AF1B10058773B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1877000F219AF1B30058773B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18770012219AF1B30058773B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18770014219AF1B30058773B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18770019219AF1B30058773B /* MishipayChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MishipayChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1877001D219AF1B30058773B /* MishipayChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MishipayChallengeTests.swift; sourceTree = "<group>"; };
+		1877001F219AF1B30058773B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18770024219AF1B30058773B /* MishipayChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MishipayChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18770028219AF1B30058773B /* MishipayChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MishipayChallengeUITests.swift; sourceTree = "<group>"; };
+		1877002A219AF1B30058773B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18770040219B00700058773B /* ScanditSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ScanditSDK; sourceTree = "<group>"; };
+		18770045219B026A0058773B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		18770047219B02770058773B /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		18770049219B02800058773B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		1877004B219B028B0058773B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1877004D219B02A20058773B /* project.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = project.xcworkspace; path = MishipayChallenge.xcodeproj/project.xcworkspace; sourceTree = "<group>"; };
+		1877004F219B02B00058773B /* ScanditBarcodeScanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScanditBarcodeScanner.framework; path = MishipayChallenge/SDKs/ScanditSDK/ScanditBarcodeScanner.framework; sourceTree = "<group>"; };
+		18770051219B05200058773B /* MishipayChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MishipayChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		18770057219B0BA60058773B /* ScanditBarcodeScanner.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ScanditBarcodeScanner.bundle; sourceTree = "<group>"; };
+		18CD2931219BD2AD00A04625 /* HomeTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabbarController.swift; sourceTree = "<group>"; };
+		1BE8E0195FE7F1D7F59BDF71 /* Pods-MishipayChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MishipayChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MishipayChallenge/Pods-MishipayChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		2A955907CBE547A8AE44D663 /* Pods-MishipayChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MishipayChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MishipayChallengeUITests/Pods-MishipayChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C59D7BDA95F4591E15C7B30 /* Pods-MishipayChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MishipayChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MishipayChallengeTests/Pods-MishipayChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A2060229A0038DCF9131A3A /* Pods_MishipayChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MishipayChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8408C828B30B68A3AF07ADAC /* Pods_MishipayChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MishipayChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB3F041F4C46C980AD5B92D /* Pods-MishipayChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MishipayChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-MishipayChallenge/Pods-MishipayChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		CF349ECDB790F5D8CA1EB69D /* Pods-MishipayChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MishipayChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MishipayChallengeUITests/Pods-MishipayChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DD61B2804EEF4B682ED59233 /* Pods-MishipayChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MishipayChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MishipayChallengeTests/Pods-MishipayChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		E91640FFF0E2EB32F0ED9F49 /* Pods_MishipayChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MishipayChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18770002219AF1B10058773B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18770050219B02B00058773B /* ScanditBarcodeScanner.framework in Frameworks */,
+				1877004C219B028B0058773B /* libz.tbd in Frameworks */,
+				1877004A219B02800058773B /* libc++.tbd in Frameworks */,
+				18770048219B02770058773B /* libiconv.tbd in Frameworks */,
+				18770046219B026A0058773B /* Accelerate.framework in Frameworks */,
+				AADD93494D6C92C3657E7B87 /* Pods_MishipayChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18770016219AF1B30058773B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464CB981512DDB735FA5B68C /* Pods_MishipayChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18770021219AF1B30058773B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34EF98F3C86B4584963DCD36 /* Pods_MishipayChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18086601219B4D7B00EEAA18 /* CartTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				180865FD219B4D7000EEAA18 /* CartTableViewCell.swift */,
+				180865FE219B4D7000EEAA18 /* CartTableViewCell.xib */,
+			);
+			path = CartTableViewCell;
+			sourceTree = "<group>";
+		};
+		18163D61219BD7E4006EE8F8 /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				18CD2931219BD2AD00A04625 /* HomeTabbarController.swift */,
+			);
+			path = TabController;
+			sourceTree = "<group>";
+		};
+		18163D62219BE1D3006EE8F8 /* ProfileController */ = {
+			isa = PBXGroup;
+			children = (
+				18163D63219BE1F0006EE8F8 /* ProfileViewController.swift */,
+				18163D65219BE292006EE8F8 /* ProfileDataSource.swift */,
+			);
+			path = ProfileController;
+			sourceTree = "<group>";
+		};
+		18163D67219BE2C1006EE8F8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				18163D6C219BE2E3006EE8F8 /* ProfileMenuTableViewCell */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		18163D6C219BE2E3006EE8F8 /* ProfileMenuTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				18163D68219BE2DD006EE8F8 /* ProfileMenuTableViewCell.swift */,
+				18163D69219BE2DD006EE8F8 /* ProfileMenuTableViewCell.xib */,
+			);
+			path = ProfileMenuTableViewCell;
+			sourceTree = "<group>";
+		};
+		1847F60A219B83E5003E4065 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				1847F60B219B83EF003E4065 /* MyImageCache.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		1847F611219BB4CC003E4065 /* SignInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1847F612219BB4E2003E4065 /* SignInViewController.swift */,
+				1847F614219BC5CC003E4065 /* SignUpViewController.swift */,
+			);
+			path = SignInViewController;
+			sourceTree = "<group>";
+		};
+		18770006219AF1B10058773B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18770005219AF1B10058773B /* MishipayChallenge.app */,
+				18770019219AF1B30058773B /* MishipayChallengeTests.xctest */,
+				18770024219AF1B30058773B /* MishipayChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18770007219AF1B10058773B /* MishipayChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				1847F60A219B83E5003E4065 /* Commons */,
+				18770011219AF1B30058773B /* LaunchScreen.storyboard */,
+				1877003F219B00590058773B /* SDKs */,
+				1877003E219AFE540058773B /* Configuration */,
+				1877003B219AF3710058773B /* SupportingFiles */,
+				1877003A219AF21D0058773B /* Application Delegate */,
+				18770039219AF2180058773B /* Resources */,
+				18770038219AF2110058773B /* View Controllers */,
+				18770037219AF20C0058773B /* Views */,
+				18770036219AF2010058773B /* Models */,
+			);
+			path = MishipayChallenge;
+			sourceTree = "<group>";
+		};
+		1877001C219AF1B30058773B /* MishipayChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1877001D219AF1B30058773B /* MishipayChallengeTests.swift */,
+				1877001F219AF1B30058773B /* Info.plist */,
+			);
+			path = MishipayChallengeTests;
+			sourceTree = "<group>";
+		};
+		18770027219AF1B30058773B /* MishipayChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18770028219AF1B30058773B /* MishipayChallengeUITests.swift */,
+				1877002A219AF1B30058773B /* Info.plist */,
+			);
+			path = MishipayChallengeUITests;
+			sourceTree = "<group>";
+		};
+		18770036219AF2010058773B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				180A84FE219B74DD00DA7103 /* Product.swift */,
+				1847F608219B786D003E4065 /* Store.swift */,
+				1847F60D219B89BA003E4065 /* RootProduct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18770037219AF20C0058773B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18163D67219BE2C1006EE8F8 /* Profile */,
+				18CD2930219BD1F600A04625 /* Cart */,
+				1877000C219AF1B10058773B /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18770038219AF2110058773B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18163D62219BE1D3006EE8F8 /* ProfileController */,
+				18163D61219BD7E4006EE8F8 /* TabController */,
+				1847F611219BB4CC003E4065 /* SignInViewController */,
+				18CD292F219BD1E300A04625 /* CartController */,
+				18CD292E219BD1D400A04625 /* ScanViewController */,
+				18CD292D219BD1C300A04625 /* ProductViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		18770039219AF2180058773B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1877000F219AF1B30058773B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1877003A219AF21D0058773B /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				18770008219AF1B10058773B /* AppDelegate.swift */,
+				1847F60F219BA5D8003E4065 /* CartItemTableViewCellDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		1877003B219AF3710058773B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				18770014219AF1B30058773B /* Info.plist */,
+				18770051219B05200058773B /* MishipayChallenge-Bridging-Header.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		1877003E219AFE540058773B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				180865F9219B199B00EEAA18 /* Configuration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		1877003F219B00590058773B /* SDKs */ = {
+			isa = PBXGroup;
+			children = (
+				18770040219B00700058773B /* ScanditSDK */,
+			);
+			path = SDKs;
+			sourceTree = "<group>";
+		};
+		18770044219B02690058773B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1877004F219B02B00058773B /* ScanditBarcodeScanner.framework */,
+				1877004D219B02A20058773B /* project.xcworkspace */,
+				1877004B219B028B0058773B /* libz.tbd */,
+				18770057219B0BA60058773B /* ScanditBarcodeScanner.bundle */,
+				18770049219B02800058773B /* libc++.tbd */,
+				18770047219B02770058773B /* libiconv.tbd */,
+				18770045219B026A0058773B /* Accelerate.framework */,
+				E91640FFF0E2EB32F0ED9F49 /* Pods_MishipayChallenge.framework */,
+				8408C828B30B68A3AF07ADAC /* Pods_MishipayChallengeTests.framework */,
+				7A2060229A0038DCF9131A3A /* Pods_MishipayChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1877FFFC219AF1B10058773B = {
+			isa = PBXGroup;
+			children = (
+				18770007219AF1B10058773B /* MishipayChallenge */,
+				1877001C219AF1B30058773B /* MishipayChallengeTests */,
+				18770027219AF1B30058773B /* MishipayChallengeUITests */,
+				18770006219AF1B10058773B /* Products */,
+				18770044219B02690058773B /* Frameworks */,
+				D2BF251C26DBF8E84CA15EE3 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		18CD292D219BD1C300A04625 /* ProductViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1847F606219B6E86003E4065 /* ProductViewController.swift */,
+			);
+			path = ProductViewController;
+			sourceTree = "<group>";
+		};
+		18CD292E219BD1D400A04625 /* ScanViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1877000A219AF1B10058773B /* ScanViewController.swift */,
+			);
+			path = ScanViewController;
+			sourceTree = "<group>";
+		};
+		18CD292F219BD1E300A04625 /* CartController */ = {
+			isa = PBXGroup;
+			children = (
+				180865FB219B3EF100EEAA18 /* CartViewController.swift */,
+				1847F604219B4E82003E4065 /* CartDataSource.swift */,
+			);
+			path = CartController;
+			sourceTree = "<group>";
+		};
+		18CD2930219BD1F600A04625 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				18086601219B4D7B00EEAA18 /* CartTableViewCell */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		D2BF251C26DBF8E84CA15EE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BE8E0195FE7F1D7F59BDF71 /* Pods-MishipayChallenge.debug.xcconfig */,
+				BCB3F041F4C46C980AD5B92D /* Pods-MishipayChallenge.release.xcconfig */,
+				3C59D7BDA95F4591E15C7B30 /* Pods-MishipayChallengeTests.debug.xcconfig */,
+				DD61B2804EEF4B682ED59233 /* Pods-MishipayChallengeTests.release.xcconfig */,
+				2A955907CBE547A8AE44D663 /* Pods-MishipayChallengeUITests.debug.xcconfig */,
+				CF349ECDB790F5D8CA1EB69D /* Pods-MishipayChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18770004219AF1B10058773B /* MishipayChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1877002D219AF1B30058773B /* Build configuration list for PBXNativeTarget "MishipayChallenge" */;
+			buildPhases = (
+				C556C936B1DC780A50CF1DEE /* [CP] Check Pods Manifest.lock */,
+				18770001219AF1B10058773B /* Sources */,
+				18770002219AF1B10058773B /* Frameworks */,
+				18770003219AF1B10058773B /* Resources */,
+				4DB41467BA712C3EDE6EF22E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MishipayChallenge;
+			productName = MishipayChallenge;
+			productReference = 18770005219AF1B10058773B /* MishipayChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18770018219AF1B30058773B /* MishipayChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18770030219AF1B30058773B /* Build configuration list for PBXNativeTarget "MishipayChallengeTests" */;
+			buildPhases = (
+				10649D60FB1B02776FA12DD1 /* [CP] Check Pods Manifest.lock */,
+				18770015219AF1B30058773B /* Sources */,
+				18770016219AF1B30058773B /* Frameworks */,
+				18770017219AF1B30058773B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1877001B219AF1B30058773B /* PBXTargetDependency */,
+			);
+			name = MishipayChallengeTests;
+			productName = MishipayChallengeTests;
+			productReference = 18770019219AF1B30058773B /* MishipayChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18770023219AF1B30058773B /* MishipayChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18770033219AF1B30058773B /* Build configuration list for PBXNativeTarget "MishipayChallengeUITests" */;
+			buildPhases = (
+				BFF470303FE78C4FB87D0CD3 /* [CP] Check Pods Manifest.lock */,
+				18770020219AF1B30058773B /* Sources */,
+				18770021219AF1B30058773B /* Frameworks */,
+				18770022219AF1B30058773B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18770026219AF1B30058773B /* PBXTargetDependency */,
+			);
+			name = MishipayChallengeUITests;
+			productName = MishipayChallengeUITests;
+			productReference = 18770024219AF1B30058773B /* MishipayChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1877FFFD219AF1B10058773B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Praveen;
+				TargetAttributes = {
+					18770004219AF1B10058773B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					18770018219AF1B30058773B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 18770004219AF1B10058773B;
+					};
+					18770023219AF1B30058773B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 18770004219AF1B10058773B;
+					};
+				};
+			};
+			buildConfigurationList = 18770000219AF1B10058773B /* Build configuration list for PBXProject "MishipayChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1877FFFC219AF1B10058773B;
+			productRefGroup = 18770006219AF1B10058773B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18770004219AF1B10058773B /* MishipayChallenge */,
+				18770018219AF1B30058773B /* MishipayChallengeTests */,
+				18770023219AF1B30058773B /* MishipayChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18770003219AF1B10058773B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18770013219AF1B30058773B /* LaunchScreen.storyboard in Resources */,
+				18770010219AF1B30058773B /* Assets.xcassets in Resources */,
+				18770058219B0BA60058773B /* ScanditBarcodeScanner.bundle in Resources */,
+				18086600219B4D7000EEAA18 /* CartTableViewCell.xib in Resources */,
+				18770041219B00700058773B /* ScanditSDK in Resources */,
+				18163D6B219BE2DD006EE8F8 /* ProfileMenuTableViewCell.xib in Resources */,
+				1877000E219AF1B10058773B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18770017219AF1B30058773B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18770022219AF1B30058773B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10649D60FB1B02776FA12DD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MishipayChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DB41467BA712C3EDE6EF22E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MishipayChallenge/Pods-MishipayChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MishipayChallenge/Pods-MishipayChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF470303FE78C4FB87D0CD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MishipayChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C556C936B1DC780A50CF1DEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MishipayChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18770001219AF1B10058773B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18163D6A219BE2DD006EE8F8 /* ProfileMenuTableViewCell.swift in Sources */,
+				1847F605219B4E82003E4065 /* CartDataSource.swift in Sources */,
+				1847F610219BA5D8003E4065 /* CartItemTableViewCellDelegate.swift in Sources */,
+				180A84FF219B74DD00DA7103 /* Product.swift in Sources */,
+				1847F60C219B83EF003E4065 /* MyImageCache.swift in Sources */,
+				1847F615219BC5CC003E4065 /* SignUpViewController.swift in Sources */,
+				180865FC219B3EF100EEAA18 /* CartViewController.swift in Sources */,
+				18163D64219BE1F0006EE8F8 /* ProfileViewController.swift in Sources */,
+				1847F613219BB4E2003E4065 /* SignInViewController.swift in Sources */,
+				1847F609219B786D003E4065 /* Store.swift in Sources */,
+				180865FA219B199B00EEAA18 /* Configuration.swift in Sources */,
+				1847F607219B6E86003E4065 /* ProductViewController.swift in Sources */,
+				180865FF219B4D7000EEAA18 /* CartTableViewCell.swift in Sources */,
+				18163D66219BE292006EE8F8 /* ProfileDataSource.swift in Sources */,
+				1877000B219AF1B10058773B /* ScanViewController.swift in Sources */,
+				1847F60E219B89BA003E4065 /* RootProduct.swift in Sources */,
+				18770009219AF1B10058773B /* AppDelegate.swift in Sources */,
+				18CD2932219BD2AD00A04625 /* HomeTabbarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18770015219AF1B30058773B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1877001E219AF1B30058773B /* MishipayChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18770020219AF1B30058773B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18770029219AF1B30058773B /* MishipayChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1877001B219AF1B30058773B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18770004219AF1B10058773B /* MishipayChallenge */;
+			targetProxy = 1877001A219AF1B30058773B /* PBXContainerItemProxy */;
+		};
+		18770026219AF1B30058773B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18770004219AF1B10058773B /* MishipayChallenge */;
+			targetProxy = 18770025219AF1B30058773B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1877000C219AF1B10058773B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1877000D219AF1B10058773B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18770011219AF1B30058773B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18770012219AF1B30058773B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1877002B219AF1B30058773B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1877002C219AF1B30058773B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1877002E219AF1B30058773B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BE8E0195FE7F1D7F59BDF71 /* Pods-MishipayChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TEEXUV9NEU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MishipayChallenge/SDKs/ScanditSDK",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/MishipayChallenge/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveen.MishipayChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/OneDrive/Projects/xcode10_projects/MishipayChallenge/MishipayChallenge/SupportingFiles/MishipayChallenge-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "/Users/apple/OneDrive/Projects/xcode10_projects/MishipayChallenge/MishipayChallenge/SupportingFiles/MishipayChallenge-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1877002F219AF1B30058773B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCB3F041F4C46C980AD5B92D /* Pods-MishipayChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TEEXUV9NEU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MishipayChallenge/SDKs/ScanditSDK",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/MishipayChallenge/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveen.MishipayChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/apple/OneDrive/Projects/xcode10_projects/MishipayChallenge/MishipayChallenge/SupportingFiles/MishipayChallenge-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "/Users/apple/OneDrive/Projects/xcode10_projects/MishipayChallenge/MishipayChallenge/SupportingFiles/MishipayChallenge-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18770031219AF1B30058773B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C59D7BDA95F4591E15C7B30 /* Pods-MishipayChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TEEXUV9NEU;
+				INFOPLIST_FILE = MishipayChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveen.MishipayChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MishipayChallenge.app/MishipayChallenge";
+			};
+			name = Debug;
+		};
+		18770032219AF1B30058773B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD61B2804EEF4B682ED59233 /* Pods-MishipayChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TEEXUV9NEU;
+				INFOPLIST_FILE = MishipayChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveen.MishipayChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MishipayChallenge.app/MishipayChallenge";
+			};
+			name = Release;
+		};
+		18770034219AF1B30058773B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A955907CBE547A8AE44D663 /* Pods-MishipayChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TEEXUV9NEU;
+				INFOPLIST_FILE = MishipayChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveen.MishipayChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MishipayChallenge;
+			};
+			name = Debug;
+		};
+		18770035219AF1B30058773B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF349ECDB790F5D8CA1EB69D /* Pods-MishipayChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TEEXUV9NEU;
+				INFOPLIST_FILE = MishipayChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveen.MishipayChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MishipayChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18770000219AF1B10058773B /* Build configuration list for PBXProject "MishipayChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1877002B219AF1B30058773B /* Debug */,
+				1877002C219AF1B30058773B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1877002D219AF1B30058773B /* Build configuration list for PBXNativeTarget "MishipayChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1877002E219AF1B30058773B /* Debug */,
+				1877002F219AF1B30058773B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18770030219AF1B30058773B /* Build configuration list for PBXNativeTarget "MishipayChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18770031219AF1B30058773B /* Debug */,
+				18770032219AF1B30058773B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18770033219AF1B30058773B /* Build configuration list for PBXNativeTarget "MishipayChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18770034219AF1B30058773B /* Debug */,
+				18770035219AF1B30058773B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1877FFFD219AF1B10058773B /* Project object */;
+}
