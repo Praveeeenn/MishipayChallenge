@@ -21,7 +21,7 @@ and [more](https://docs.scandit.com/supported-symbologies.html "more").
 - Scandit SDK (for scanning the codes)
 - Alamofire (for handling network request smartly)
 
-## Inspiration
+## Inspiration for design and flow
 - Mishipay iOS App
 
 Note:-
