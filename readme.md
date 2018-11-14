@@ -4,7 +4,7 @@
 ##### iOS 12
 
 
-##App can scan/read following types of code:-
+## App can scan/read following types of code:-
 - Legacy 1D Symbologies - CodeBar
 - Legacy 1D Symbologies - Code 11
 - Legacy 1D Symbologies - Code 25
@@ -17,7 +17,7 @@
 - 2D Symbologies -MicroPDF417
 and [more](https://docs.scandit.com/supported-symbologies.html "more").
 
-##Third party library & SDK
+## Third party library & SDK
 - Scandit SDK (for scanning the codes)
 - Alamofire (for handling network request smartly)
 
